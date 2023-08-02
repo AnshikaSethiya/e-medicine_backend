@@ -1,0 +1,66 @@
+D:\E-Medicine Project\EMedicine Backend\bin\Debug\net6.0\appsettings.Development.json
+D:\E-Medicine Project\EMedicine Backend\bin\Debug\net6.0\appsettings.json
+D:\E-Medicine Project\EMedicine Backend\bin\Debug\net6.0\EMedicine Backend.exe
+D:\E-Medicine Project\EMedicine Backend\bin\Debug\net6.0\EMedicine Backend.deps.json
+D:\E-Medicine Project\EMedicine Backend\bin\Debug\net6.0\EMedicine Backend.runtimeconfig.json
+D:\E-Medicine Project\EMedicine Backend\bin\Debug\net6.0\EMedicine Backend.dll
+D:\E-Medicine Project\EMedicine Backend\bin\Debug\net6.0\EMedicine Backend.pdb
+D:\E-Medicine Project\EMedicine Backend\bin\Debug\net6.0\Microsoft.OpenApi.dll
+D:\E-Medicine Project\EMedicine Backend\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\E-Medicine Project\EMedicine Backend\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\E-Medicine Project\EMedicine Backend\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\E-Medicine Project\EMedicine Backend\bin\Debug\net6.0\System.Data.SqlClient.dll
+D:\E-Medicine Project\EMedicine Backend\bin\Debug\net6.0\runtimes\win-arm64\native\sni.dll
+D:\E-Medicine Project\EMedicine Backend\bin\Debug\net6.0\runtimes\win-x64\native\sni.dll
+D:\E-Medicine Project\EMedicine Backend\bin\Debug\net6.0\runtimes\win-x86\native\sni.dll
+D:\E-Medicine Project\EMedicine Backend\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\E-Medicine Project\EMedicine Backend\bin\Debug\net6.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\E-Medicine Project\EMedicine Backend\obj\Debug\net6.0\EMedicine Backend.csproj.AssemblyReference.cache
+D:\E-Medicine Project\EMedicine Backend\obj\Debug\net6.0\EMedicine Backend.GeneratedMSBuildEditorConfig.editorconfig
+D:\E-Medicine Project\EMedicine Backend\obj\Debug\net6.0\EMedicine Backend.AssemblyInfoInputs.cache
+D:\E-Medicine Project\EMedicine Backend\obj\Debug\net6.0\EMedicine Backend.AssemblyInfo.cs
+D:\E-Medicine Project\EMedicine Backend\obj\Debug\net6.0\EMedicine Backend.csproj.CoreCompileInputs.cache
+D:\E-Medicine Project\EMedicine Backend\obj\Debug\net6.0\EMedicine Backend.MvcApplicationPartsAssemblyInfo.cs
+D:\E-Medicine Project\EMedicine Backend\obj\Debug\net6.0\EMedicine Backend.MvcApplicationPartsAssemblyInfo.cache
+D:\E-Medicine Project\EMedicine Backend\obj\Debug\net6.0\staticwebassets.build.json
+D:\E-Medicine Project\EMedicine Backend\obj\Debug\net6.0\staticwebassets.development.json
+D:\E-Medicine Project\EMedicine Backend\obj\Debug\net6.0\scopedcss\bundle\EMedicine Backend.styles.css
+D:\E-Medicine Project\EMedicine Backend\obj\Debug\net6.0\EMedicine Backend.csproj.CopyComplete
+D:\E-Medicine Project\EMedicine Backend\obj\Debug\net6.0\EMedicine Backend.dll
+D:\E-Medicine Project\EMedicine Backend\obj\Debug\net6.0\refint\EMedicine Backend.dll
+D:\E-Medicine Project\EMedicine Backend\obj\Debug\net6.0\EMedicine Backend.pdb
+D:\E-Medicine Project\EMedicine Backend\obj\Debug\net6.0\EMedicine Backend.genruntimeconfig.cache
+D:\E-Medicine Project\EMedicine Backend\obj\Debug\net6.0\ref\EMedicine Backend.dll
+D:\E-Medicines\e-medicine_backend\bin\Debug\net6.0\appsettings.Development.json
+D:\E-Medicines\e-medicine_backend\bin\Debug\net6.0\appsettings.json
+D:\E-Medicines\e-medicine_backend\bin\Debug\net6.0\EMedicine Backend.exe
+D:\E-Medicines\e-medicine_backend\bin\Debug\net6.0\EMedicine Backend.deps.json
+D:\E-Medicines\e-medicine_backend\bin\Debug\net6.0\EMedicine Backend.runtimeconfig.json
+D:\E-Medicines\e-medicine_backend\bin\Debug\net6.0\EMedicine Backend.dll
+D:\E-Medicines\e-medicine_backend\bin\Debug\net6.0\EMedicine Backend.pdb
+D:\E-Medicines\e-medicine_backend\bin\Debug\net6.0\Microsoft.OpenApi.dll
+D:\E-Medicines\e-medicine_backend\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\E-Medicines\e-medicine_backend\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\E-Medicines\e-medicine_backend\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\E-Medicines\e-medicine_backend\bin\Debug\net6.0\System.Data.SqlClient.dll
+D:\E-Medicines\e-medicine_backend\bin\Debug\net6.0\runtimes\win-arm64\native\sni.dll
+D:\E-Medicines\e-medicine_backend\bin\Debug\net6.0\runtimes\win-x64\native\sni.dll
+D:\E-Medicines\e-medicine_backend\bin\Debug\net6.0\runtimes\win-x86\native\sni.dll
+D:\E-Medicines\e-medicine_backend\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\E-Medicines\e-medicine_backend\bin\Debug\net6.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\E-Medicines\e-medicine_backend\obj\Debug\net6.0\EMedicine Backend.csproj.AssemblyReference.cache
+D:\E-Medicines\e-medicine_backend\obj\Debug\net6.0\EMedicine Backend.GeneratedMSBuildEditorConfig.editorconfig
+D:\E-Medicines\e-medicine_backend\obj\Debug\net6.0\EMedicine Backend.AssemblyInfoInputs.cache
+D:\E-Medicines\e-medicine_backend\obj\Debug\net6.0\EMedicine Backend.AssemblyInfo.cs
+D:\E-Medicines\e-medicine_backend\obj\Debug\net6.0\EMedicine Backend.csproj.CoreCompileInputs.cache
+D:\E-Medicines\e-medicine_backend\obj\Debug\net6.0\EMedicine Backend.MvcApplicationPartsAssemblyInfo.cs
+D:\E-Medicines\e-medicine_backend\obj\Debug\net6.0\EMedicine Backend.MvcApplicationPartsAssemblyInfo.cache
+D:\E-Medicines\e-medicine_backend\obj\Debug\net6.0\staticwebassets.build.json
+D:\E-Medicines\e-medicine_backend\obj\Debug\net6.0\staticwebassets.development.json
+D:\E-Medicines\e-medicine_backend\obj\Debug\net6.0\scopedcss\bundle\EMedicine Backend.styles.css
+D:\E-Medicines\e-medicine_backend\obj\Debug\net6.0\EMedicine Backend.csproj.CopyComplete
+D:\E-Medicines\e-medicine_backend\obj\Debug\net6.0\EMedicine Backend.dll
+D:\E-Medicines\e-medicine_backend\obj\Debug\net6.0\refint\EMedicine Backend.dll
+D:\E-Medicines\e-medicine_backend\obj\Debug\net6.0\EMedicine Backend.pdb
+D:\E-Medicines\e-medicine_backend\obj\Debug\net6.0\EMedicine Backend.genruntimeconfig.cache
+D:\E-Medicines\e-medicine_backend\obj\Debug\net6.0\ref\EMedicine Backend.dll
