@@ -1,0 +1,73 @@
+--CREATE DATABASE	EMedicine;
+
+USE	EMedicine;
+
+CREATE TABLE [dbo].[Users] (
+    [ID]        INT             IDENTITY (1, 1) NOT NULL,
+    [FirstName] VARCHAR (100)   NULL,
+    [LastName]  VARCHAR (100)   NULL,
+    [Password]  VARCHAR (100)   NULL,
+    [Email]     VARCHAR (100)   NULL,
+    [Fund]      DECIMAL (18, 2) NULL,
+    [Type]      VARCHAR (100)   NULL,
+    [Status]    INT             NULL,
+    [CreatedOn] DATETIME        NULL,
+    PRIMARY KEY CLUSTERED ([ID] ASC)
+);
+
+CREATE TABLE [dbo].[Medicines] (
+    [ID]           INT             IDENTITY (1, 1) NOT NULL,
+    [Name]         VARCHAR (100)   NULL,
+    [Manufacturer] VARCHAR (100)   NULL,
+    [UnitPrice]    DECIMAL (18, 2) NULL,
+    [Discount]     DECIMAL (18, 2) NULL,
+    [Quantity]     INT             NULL,
+    [ExpDate]      DATETIME        NULL,
+    [ImageUrl]     VARCHAR (200)   NULL,
+    [Details]      VARCHAR (1500)  NULL,
+    [Status]       INT             NULL,
+    PRIMARY KEY CLUSTERED ([ID] ASC)
+);
+
+
+CREATE TABLE [dbo].[Cart] (
+    [ID]         INT             IDENTITY (1, 1) NOT NULL,
+    [UserId]     INT             NULL,
+    [MedicineID] INT             NULL,
+    [Name]       VARCHAR (100)   NULL,
+    [ImageUrl]   VARCHAR (200)   NULL,
+    [UnitPrice]  DECIMAL (18, 2) NULL,
+    [Discount]   DECIMAL (18, 2) NULL,
+    [Quantity]   INT             NULL,
+    [TotalPrice] DECIMAL (18, 2) NULL,
+    PRIMARY KEY CLUSTERED ([ID] ASC)
+);
+
+
+CREATE TABLE [dbo].[Orders] (
+    [ID]          INT             IDENTITY (1, 1) NOT NULL,
+    [UserID]      INT             NULL,
+    [OrderNo]     VARCHAR (100)   NULL,
+    [OrderTotal]  DECIMAL (18, 2) NULL,
+    [OrderStatus] VARCHAR (100)   NULL,
+    [OrderDate]   DATETIME        NOT NULL,
+    PRIMARY KEY CLUSTERED ([ID] ASC)
+);
+
+CREATE TABLE [dbo].[OrderItems] (
+    [ID]         INT             IDENTITY (1, 1) NOT NULL,
+    [OrderNo]    VARCHAR (100)   NULL,
+    [MedicineID] INT             NULL,
+    [UnitPrice]  DECIMAL (18, 2) NULL,
+    [Discount]   DECIMAL (18, 2) NULL,
+    [Quantity]   DECIMAL (18, 2) NULL,
+    [TotalPrice] DECIMAL (18, 2) NULL,
+    [Name]       VARCHAR (100)   NULL,
+    PRIMARY KEY CLUSTERED ([ID] ASC)
+);
+SELECT * FROM Users;
+SELECT * FROM Medicines;
+SELECT * FROM Cart;
+SELECT * FROM Orders;
+SELECT * FROM OrderItems;
+
