@@ -19,9 +19,17 @@ namespace EMedicine_Backend.Controllers
         [Route("getMedicine")]
         public Response getMedicine()
         {
+            Response response = new Response();
             DataAccessLayer dal = new DataAccessLayer();
             SqlConnection connection = new SqlConnection(_configuration.GetConnectionString("EMedCS").ToString());
-            Response response = dal.getMedicine(connection);
+            try
+            {
+                response = dal.getMedicine(connection);
+            }
+            catch(Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
             return response;
         }
 
@@ -30,9 +38,17 @@ namespace EMedicine_Backend.Controllers
 
         public Response getSingleMedicine(int Id)
         {
+            Response response = new Response();
             DataAccessLayer dal = new DataAccessLayer();
             SqlConnection connection = new SqlConnection(_configuration.GetConnectionString("EMedCS").ToString());
-            Response response = dal.getSingleMedicine(Id, connection);
+            try
+            {
+                response = dal.getSingleMedicine(Id, connection);
+            }
+            catch(Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
             return response;
         }
 

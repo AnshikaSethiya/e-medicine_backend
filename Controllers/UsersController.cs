@@ -24,10 +24,16 @@ namespace EMedicine_Backend.Controllers
         public Response register(Users users)
         {
             Response response = new Response();
-            DataAccessLayer dal = new DataAccessLayer();
-            SqlConnection connection = new SqlConnection(_configuration.GetConnectionString("EMedCS").ToString());
-            response = dal.register(users, connection);
-
+            try
+            {
+                DataAccessLayer dal = new DataAccessLayer();
+                SqlConnection connection = new SqlConnection(_configuration.GetConnectionString("EMedCS").ToString());
+                response = dal.register(users, connection);
+            }
+            catch(Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
             return response;
         }
 
@@ -35,19 +41,35 @@ namespace EMedicine_Backend.Controllers
         [Route("login")]
         public Response login(LoginModel loginUser)
         {
-            DataAccessLayer dal = new DataAccessLayer();
-            SqlConnection connection = new SqlConnection(_configuration.GetConnectionString("EMedCS").ToString());
-            Response response = dal.login(loginUser, connection);
-            return response;
+            Response response = new Response();
+            try
+            {
+                DataAccessLayer dal = new DataAccessLayer();
+                SqlConnection connection = new SqlConnection(_configuration.GetConnectionString("EMedCS").ToString());
+                response = dal.login(loginUser, connection);
+            }
+            catch(Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+                return response;
         }
 
         [HttpPost]
         [Route("addToCart")]
         public Response addToCart(Cart cart)
         {
-            DataAccessLayer dal = new DataAccessLayer();
-            SqlConnection connection = new SqlConnection(_configuration.GetConnectionString("EMedCS").ToString());
-            Response response = dal.addToCart(cart, connection);
+            Response response = new Response();
+            try
+            {
+                DataAccessLayer dal = new DataAccessLayer();
+                SqlConnection connection = new SqlConnection(_configuration.GetConnectionString("EMedCS").ToString());
+                response = dal.addToCart(cart, connection);
+            }
+            catch(Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
             return response;
         }
 
@@ -55,9 +77,17 @@ namespace EMedicine_Backend.Controllers
         [Route("getCartItem")]
         public Response getCartItem(int Id)
         {
-            DataAccessLayer dal = new DataAccessLayer();
-            SqlConnection connection = new SqlConnection(_configuration.GetConnectionString("EMedCS").ToString());
-            Response response = dal.GetCartItem(Id, connection);
+            Response response = new Response();
+            try
+            {
+                DataAccessLayer dal = new DataAccessLayer();
+                SqlConnection connection = new SqlConnection(_configuration.GetConnectionString("EMedCS").ToString());
+                response = dal.GetCartItem(Id, connection);
+            }
+            catch(Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
             return response;
         }
 
@@ -65,9 +95,17 @@ namespace EMedicine_Backend.Controllers
         [Route("removeCartItem")]
         public Response removeCartItem(int UserId, int MedicineId)
         {
-            DataAccessLayer dal = new DataAccessLayer();
-            SqlConnection connection = new SqlConnection(_configuration.GetConnectionString("EMedCS").ToString());
-            Response response = dal.removeCartItem(UserId, MedicineId, connection);
+            Response response = new Response();
+            try
+            {
+                DataAccessLayer dal = new DataAccessLayer();
+                SqlConnection connection = new SqlConnection(_configuration.GetConnectionString("EMedCS").ToString());
+                response = dal.removeCartItem(UserId, MedicineId, connection);
+            }
+            catch(Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
             return response;
         }
 
@@ -75,9 +113,17 @@ namespace EMedicine_Backend.Controllers
         [Route("placeOrder")]
         public Response placeOrder(int Id, Orders order)
         {
-            DataAccessLayer dal = new DataAccessLayer();
-            SqlConnection connection = new SqlConnection(_configuration.GetConnectionString("EMedCS").ToString());
-            Response response = dal.placeOrder(Id, order, connection);
+            Response response = new Response();
+            try
+            {
+                DataAccessLayer dal = new DataAccessLayer();
+                SqlConnection connection = new SqlConnection(_configuration.GetConnectionString("EMedCS").ToString());
+                response = dal.placeOrder(Id, order, connection);
+            }
+            catch(Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
             return response;
         }
 
@@ -85,9 +131,17 @@ namespace EMedicine_Backend.Controllers
         [Route("orderList")]
         public Response orderList(int Id)
         {
-            DataAccessLayer dal = new DataAccessLayer();
-            SqlConnection connection = new SqlConnection(_configuration.GetConnectionString("EMedCS").ToString());
-            Response response = dal.orderList(Id, connection);
+            Response response = new Response();
+            try
+            {
+                DataAccessLayer dal = new DataAccessLayer();
+                SqlConnection connection = new SqlConnection(_configuration.GetConnectionString("EMedCS").ToString());
+                response = dal.orderList(Id, connection);
+            }
+            catch(Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
             return response;
         }
 
@@ -95,9 +149,17 @@ namespace EMedicine_Backend.Controllers
         [Route("orderListItem")]
         public Response orderListItem(List<OrderItems> orderItems)
         {
-            DataAccessLayer dal = new DataAccessLayer();
-            SqlConnection connection = new SqlConnection(_configuration.GetConnectionString("EMedCS").ToString());
-            Response response = dal.orderListItem(orderItems, connection);
+            Response response = new Response();
+            try
+            {
+                DataAccessLayer dal = new DataAccessLayer();
+                SqlConnection connection = new SqlConnection(_configuration.GetConnectionString("EMedCS").ToString());
+                response = dal.orderListItem(orderItems, connection);
+            }
+            catch(Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
             return response;
         }
 
@@ -105,9 +167,17 @@ namespace EMedicine_Backend.Controllers
         [Route("orderDetail")]
         public Response orderDetail(string orderNo)
         {
-            DataAccessLayer dal = new DataAccessLayer();
-            SqlConnection connection = new SqlConnection(_configuration.GetConnectionString("EMedCS").ToString());
-            Response response = dal.orderDetail(orderNo, connection);
+            Response response = new Response();
+            try
+            {
+                DataAccessLayer dal = new DataAccessLayer();
+                SqlConnection connection = new SqlConnection(_configuration.GetConnectionString("EMedCS").ToString());
+                response = dal.orderDetail(orderNo, connection);
+            }
+            catch(Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
             return response;
         }
 
@@ -115,9 +185,17 @@ namespace EMedicine_Backend.Controllers
         [Route("viewUser")]
         public Response viewUser(Users users)
         {
-            DataAccessLayer dal = new DataAccessLayer();
-            SqlConnection connection = new SqlConnection(_configuration.GetConnectionString("EMedCS").ToString());
-            Response response = dal.viewUser(users, connection);
+            Response response = new Response();
+            try
+            {
+                DataAccessLayer dal = new DataAccessLayer();
+                SqlConnection connection = new SqlConnection(_configuration.GetConnectionString("EMedCS").ToString());
+                response = dal.viewUser(users, connection);
+            }
+            catch(Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
             return response;
         }
 
@@ -125,12 +203,19 @@ namespace EMedicine_Backend.Controllers
         [Route("updateProfile")]
         public Response updateProfile(Users users)
         {
-            DataAccessLayer dal = new DataAccessLayer();
-            SqlConnection connection = new SqlConnection(_configuration.GetConnectionString("EMedCS").ToString());
-            Response response = dal.updateProfile(users, connection);
+            Response response = new Response();
+            try
+            {
+                DataAccessLayer dal = new DataAccessLayer();
+                SqlConnection connection = new SqlConnection(_configuration.GetConnectionString("EMedCS").ToString());
+                response = dal.updateProfile(users, connection);
+            }
+            catch(Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
             return response;
         }
-
 
     }
 }

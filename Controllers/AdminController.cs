@@ -22,9 +22,18 @@ namespace EMedicine_Backend.Controllers
         [Route("addMedicine")]
         public Response addUpdateMedicine(Medicines medicines)
         {
+            Response response = new Response();
             DataAccessLayer dal = new DataAccessLayer();
             SqlConnection connection = new SqlConnection(_configuration.GetConnectionString("EMedCS").ToString());
-            Response response = dal.addMedicine(medicines, connection);
+            try
+            {
+                response = dal.addMedicine(medicines, connection);
+            }
+            catch(Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+           
             return response;
 
         }
@@ -33,9 +42,17 @@ namespace EMedicine_Backend.Controllers
         [Route("userList")]
         public Response userList()
         {
+            Response response = new Response();
             DataAccessLayer dal = new DataAccessLayer();
             SqlConnection connection = new SqlConnection(_configuration.GetConnectionString("EMedCS").ToString());
-            Response response = dal.userList(connection);
+            try
+            {
+                response = dal.userList(connection);
+            }
+            catch(Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
             return response;
         }
 
@@ -43,9 +60,17 @@ namespace EMedicine_Backend.Controllers
         [Route("orderListAdmin")]
         public Response orderListAdmin()
         {
+            Response response = new Response();
             DataAccessLayer dal = new DataAccessLayer();
             SqlConnection connection = new SqlConnection(_configuration.GetConnectionString("EMedCS").ToString());
-            Response response = dal.orderListAdmin(connection);
+            try
+            {
+                response = dal.orderListAdmin(connection);
+            }
+            catch(Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
             return response;
         }
 
@@ -53,9 +78,17 @@ namespace EMedicine_Backend.Controllers
         [Route("deleteProduct")]
         public Response deleteProduct(int id)
         {
+            Response response = new Response();
             DataAccessLayer dal = new DataAccessLayer();
             SqlConnection connection = new SqlConnection(_configuration.GetConnectionString("EMedCS").ToString());
-            Response response = dal.deleteProduct(id,connection);
+            try
+            {
+                response = dal.deleteProduct(id, connection);
+            }
+            catch(Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
             return response;
         }
 
@@ -63,9 +96,17 @@ namespace EMedicine_Backend.Controllers
         [Route("updateMedicine")]
         public Response updateMedicine(Medicines medicines)
         {
+            Response response = new Response();
             DataAccessLayer dal = new DataAccessLayer();
             SqlConnection connection = new SqlConnection(_configuration.GetConnectionString("EMedCS").ToString());
-            Response response = dal.updateMedicine(medicines, connection);
+            try
+            {
+                response = dal.updateMedicine(medicines, connection);
+            }
+            catch(Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
             return response;
         }
 
@@ -73,9 +114,17 @@ namespace EMedicine_Backend.Controllers
         [Route("updateStatus")]
         public Response updateStatus(Orders order)
         {
+            Response response = new Response();
             DataAccessLayer dal = new DataAccessLayer();
             SqlConnection connection = new SqlConnection(_configuration.GetConnectionString("EMedCS").ToString());
-            Response response = dal.updateStatus(order, connection);
+            try
+            {
+                response = dal.updateStatus(order, connection);
+            }
+            catch(Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
             return response;
         }
     }
