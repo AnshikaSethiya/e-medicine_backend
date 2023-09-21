@@ -493,7 +493,6 @@ namespace EMedicine_Backend.Models
                 while (dr.Read())
                 {
                     Cart cart = new Cart();
-
                     cart.Name = dr["Name"].ToString();
                     cart.ImageUrl = dr["ImageUrl"].ToString();
                     cart.MedicineId = (int)dr["MedicineID"];
